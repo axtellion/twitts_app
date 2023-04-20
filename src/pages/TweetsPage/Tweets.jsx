@@ -20,12 +20,8 @@ export const Tweets = () => {
   };
 
   useEffect(() => {
-    try {
-      const users = getUsers();
-      users.then(res => setUser(res));
-    } catch (error) {
-      console.log(error);
-    }
+    const users = getUsers();
+    users.then(res => setUser(res));
   }, []);
 
   return (
@@ -36,7 +32,7 @@ export const Tweets = () => {
             <UserCart key={item.id} item={item} array={array} />
           ))}
       </List>
-      {index <= user.length && <Btn onClick={loadMore}>Load More</Btn>}
+      {user && index <= user.length && <Btn onClick={loadMore}>Load More</Btn>}
     </Box>
   );
 };
