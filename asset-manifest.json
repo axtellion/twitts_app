@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/twitts_app/static/css/main.33988b23.css",
-    "main.js": "/twitts_app/static/js/main.27558784.js",
+    "main.js": "/twitts_app/static/js/main.78957e84.js",
     "static/media/errorPage.jpg": "/twitts_app/static/media/errorPage.c7bfa8305ed25f2aaa79.jpg",
     "static/media/EllipseSvg.svg": "/twitts_app/static/media/EllipseSvg.e9f3005b653f66517b3f87019bab9350.svg",
     "static/media/RectangleSvg.svg": "/twitts_app/static/media/RectangleSvg.3dc889ed819cc56238bce43c61f74ccc.svg",
     "index.html": "/twitts_app/index.html",
     "main.33988b23.css.map": "/twitts_app/static/css/main.33988b23.css.map",
-    "main.27558784.js.map": "/twitts_app/static/js/main.27558784.js.map"
+    "main.78957e84.js.map": "/twitts_app/static/js/main.78957e84.js.map"
   },
   "entrypoints": [
     "static/css/main.33988b23.css",
-    "static/js/main.27558784.js"
+    "static/js/main.78957e84.js"
   ]
 }
