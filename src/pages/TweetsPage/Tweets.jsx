@@ -1,12 +1,12 @@
-import { Box, List, Btn } from "./Tweets.styled";
-import { UserCart } from "../../components/UserCart/UserCart";
-import { getUsers } from "../../components/apiService";
+import { Box, List, Btn } from './Tweets.styled';
+import { UserCart } from '../../components/UserCart/UserCart';
+import { getUsers } from '../../components/apiService';
 
-import { useEffect, useState } from "react";
-import { slice } from "lodash";
+import { useEffect, useState } from 'react';
+import { slice } from 'lodash';
 
 export const Tweets = () => {
-  const lokal = localStorage.getItem("users");
+  const lokal = localStorage.getItem('users');
   const lokalFollower = JSON.parse(lokal);
 
   const [user, setUser] = useState(lokalFollower);
@@ -20,15 +20,19 @@ export const Tweets = () => {
   };
 
   useEffect(() => {
-    const users = getUsers();
-    users.then((res) => setUser(res));
+    try {
+      const users = getUsers();
+      users.then(res => setUser(res));
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
 
   return (
     <Box>
       <List>
         {user &&
-          initialPosts.map((item) => (
+          initialPosts.map(item => (
             <UserCart key={item.id} item={item} array={array} />
           ))}
       </List>
