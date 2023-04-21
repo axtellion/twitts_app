@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Box = styled.div`
   max-width: 1600px;
@@ -17,13 +17,34 @@ export const Box = styled.div`
   background-color: #48d1cc;
 `;
 
+export const SortList = styled.ul`
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+
+  margin-bottom: 50px;
+`;
+
+export const SortItem = styled.li`
+  cursor: pointer;
+  svg {
+    width: 40px;
+    height: 40px;
+    &:hover {
+      color: orange;
+    }
+  }
+`;
+
 export const List = styled.ul`
   display: flex;
 
   justify-content: center;
   align-items: center;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 40px;
 `;
 
 export const Btn = styled.button`
